@@ -1,0 +1,32 @@
+.types{
+    background-color: white;
+    color: black;
+}
+.typesActive{
+    background-color: cyan;
+    color: black;
+}
+.weaks{
+    background-color: white;
+    color: black;
+}
+.weaksActive{
+    background-color: cyan;
+    color: black;
+}
+.sphere{
+    clip-path: circle(50%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.peso-pequeño{
+    color: #313131;
+    font-size: 300%;
+    line-height: 80px;
+    text-align: center;
+    width: 100%;
+}
+.peso-pequeño::before{
+    content: "\f118";
+}
