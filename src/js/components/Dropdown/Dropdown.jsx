@@ -3,7 +3,7 @@ import "./dropdown.css"
 export const Dropdown = (props) => {
     return (
         <>
-            <div className={`container-fluid d-flex pt-5 ${props.deployed ? "" : "d-none"}`} style={{ backgroundColor: "rgb(56, 56, 56)" }}>
+            <div className={`container-fluid col-8 d-flex pt-5 ${props.deployed ? "" : "d-none"}`} style={{ backgroundColor: "rgb(56, 56, 56)" }}>
                 <div className="row col-8 mx-auto">
                     <div className="col-12 ps-0">
                         <h2 className="text-white">Tipo y debilidad</h2>
@@ -32,10 +32,11 @@ export const Dropdown = (props) => {
                         </div>
                     </div>
                     
+                <button className="mx-auto btn btn-success col-3 my-4 fs-4">Buscar <i className="fa-solid fa-magnifying-glass px-2"></i></button>
                 </div>
             </div>
-            <div className=" col-12 py-3 px-4 text-white text-center border border-white" style={{ backgroundColor: "rgba(92, 91, 91, 1)" }} onClick={() => props.setDeployed(prev => !prev)}>
-                Mostrar búsqueda avanzada <i className="fa-solid fa-arrow-down"></i>
+            <div className=" col-8 py-3 px-4 text-white text-center border border-white mx-auto" style={{ backgroundColor: "rgba(92, 91, 91, 1)" }} onClick={() => props.setDeployed(prev => !prev)}>
+                Mostrar búsqueda avanzada {props.deployed ? <i className="fa-solid fa-arrow-up"></i> : <i className="fa-solid fa-arrow-down"></i>}
             </div>
         </>
     )

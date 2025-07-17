@@ -1,7 +1,6 @@
 import { type } from "../variables";
 export const Cards = (props) => {
-    const types = props.tipo
-    console.log("props.tipo:", type.ace);
+    const types = props.tipo;
     return (
         <>
             <div className="card col-6 col-md-4 border border-0 mx-auto" style={{ width: "100%" }}>
